@@ -53,6 +53,12 @@ public class Main extends JFrame {
             centerPanel.add(boton); // Agregar botón al panel central
         }
 
+
+ // aaaaaaaaaaa
+
+
+
+
         // =========================
         // ACCIONES DE LOS BOTONES
         // =========================

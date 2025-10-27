@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ProductoDAO {
 
-    // Método para OBTENER todos los productos
+    // Método para OBTENER todos los productoss
     public List<Producto> obtenerTodos() {
         List<Producto> productos = new ArrayList<>();
         String sql = "SELECT * FROM productos";
