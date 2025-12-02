@@ -91,7 +91,7 @@ public class FormularioProductos extends JDialog {
                 productoDAO.agregarProducto(producto);
             } else { // Si tiene ID, es una actualización
                 // Asegúrate de tener el método actualizarProducto en tu DAO
-                // productoDAO.actualizarProducto(producto);
+                productoDAO.actualizarProducto(producto);
             }
             guardado = true;
             dispose(); // Cierra la ventana del formulario

@@ -79,6 +79,11 @@ public class Main extends JFrame {
         btnPredicciones.addActionListener(e ->
                 JOptionPane.showMessageDialog(this, "Módulo IA próximamente disponible")
         );
+        
+        btnVentas.addActionListener(e -> {
+            VentanaVentas ventana = new VentanaVentas(this);
+            ventana.setVisible(true);
+        });
 
         // =========================
         // AGREGAR PANELES A LA VENTANA
