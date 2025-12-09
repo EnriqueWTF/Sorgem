@@ -46,6 +46,24 @@ public class ProductoDAO {
         }
     }
 
+    public void actualizarProducto(Producto producto) {
+        String sql = "UPDATE productos SET nombre = ?, descripcion = ?, precio = ?, stock = ? WHERE id = ?";
+        try (Connection conn = Conexion.getConexion();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+            pstmt.setString(1, producto.getNombre());
+            pstmt.setString(2, producto.getDescripcion());
+            pstmt.setDouble(3, producto.getPrecio());
+            pstmt.setInt(4, producto.getStock());
+            pstmt.setInt(5, producto.getId());
+
+            pstmt.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     // Método para ELIMINAR un producto por su ID
     public void eliminarProducto(int id) {
         String sql = "DELETE FROM productos WHERE id = ?";

@@ -6,10 +6,6 @@ import modelo.Cliente;
 import javax.swing.*;
 import java.awt.*;
 
-// Importa las clases DAO y Modelo que necesitas
-import dao.ClienteDAO;
-import modelo.Cliente;
-
 public class FormularioClientes extends JDialog {
 
     private JTextField txtNombre, txtTelefono, txtEmail;

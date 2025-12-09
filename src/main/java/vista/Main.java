@@ -70,9 +70,15 @@ public class Main extends JFrame {
         });
 
         // Mostrar mensaje temporal para el módulo IA
-        btnPredicciones.addActionListener(e ->
-                JOptionPane.showMessageDialog(this, "Módulo IA próximamente disponible")
-        );
+        btnPredicciones.addActionListener(e -> {
+            VentanaIA ventana = new VentanaIA(this);
+            ventana.setVisible(true);
+        });
+
+        btnVentas.addActionListener(e -> {
+            VentanaVentas ventana = new VentanaVentas(this);
+            ventana.setVisible(true);
+        });
 
         // =========================
         // AGREGAR PANELES A LA VENTANA
